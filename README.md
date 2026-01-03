@@ -316,3 +316,4 @@ Améliorations possibles:
 **Créé:** Janvier 2026  
 **Objectif:** Éducatif - Démonstration de détection d'attaques MITM  
 **Auteur:** Projet de sécurité TCP
+# mitm-detector
