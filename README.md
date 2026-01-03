@@ -8,7 +8,7 @@ Ce projet est un **système de détection automatique des attaques MITM** pour l
 
 ---
 
-## 🎯 Fonctionnalités principales
+##  Fonctionnalités principales
 
 ### 1. **Vérification d'intégrité des messages**
 - Utilise **HMAC-SHA256** pour créer une signature unique pour chaque message
@@ -37,7 +37,7 @@ Ce projet est un **système de détection automatique des attaques MITM** pour l
 
 ---
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 mitm-detect/
@@ -53,7 +53,7 @@ mitm-detect/
 
 ---
 
-## 📚 Architecture détaillée
+##  Architecture détaillée
 
 ### **message.py** - Structure du message
 ```python
@@ -121,7 +121,7 @@ class SecureClient:
 
 ---
 
-## 🚀 Comment utiliser
+##  Comment utiliser
 
 ### **Mode 1: Simulation (Démo automatique)**
 ```bash
@@ -182,7 +182,7 @@ Alertes détaillées:
 
 ---
 
-## 🛡️ Niveaux de menace
+##  Niveaux de menace
 
 | Niveau | Signification | Exemple |
 |--------|---------------|---------|
@@ -194,7 +194,7 @@ Alertes détaillées:
 
 ---
 
-## 💡 Concepts clés expliqués
+##  Concepts clés expliqués
 
 ### **1. HMAC-SHA256**
 - Crée une signature cryptographique basée sur:
@@ -231,7 +231,7 @@ self.time_anomaly_threshold = 0.1    # Seuil d'anomalie (secondes)
 
 ---
 
-## 📦 Dépendances
+##  Dépendances
 
 **Aucune!** Le projet utilise uniquement la **stdlib Python**:
 - `socket` - Communication TCP
@@ -246,7 +246,7 @@ self.time_anomaly_threshold = 0.1    # Seuil d'anomalie (secondes)
 
 ---
 
-## 🎓 Cas d'usage
+##  Cas d'usage
 
 ### Cas 1: Communication sans attaque
 ```
@@ -273,15 +273,15 @@ Serveur reçoit: Hash déjà vu! ✗
 
 ---
 
-## 🔐 Limitations et considérations
+##  Limitations et considérations
 
-✅ **Ce système détecte:**
+ **Ce système détecte:**
 - Les modifications de contenu
 - Les doublons et rejeux
 - Les anomalies de séquence
 - Les timestamps suspects
 
-❌ **Ce système NE peut pas:**
+ **Ce système NE peut pas:**
 - Bloquer les attaques (only detection)
 - Empêcher l'interception initiale
 - Gérer le chiffrement (TCP brut)
@@ -291,7 +291,7 @@ Serveur reçoit: Hash déjà vu! ✗
 
 ---
 
-## 📝 Points clés à retenir
+##  Points clés à retenir
 
 1. **MITM existe même si la communication fonctionne** - TCP ne garantit pas la sécurité
 2. **La détection est basée sur l'analyse comportementale** - On cherche des incohérences
@@ -301,7 +301,7 @@ Serveur reçoit: Hash déjà vu! ✗
 
 ---
 
-## 🚀 Extensibilité future
+##  Extensibilité future
 
 Améliorations possibles:
 - ✓ Chiffrement des messages (AES)
@@ -314,5 +314,6 @@ Améliorations possibles:
 ---
 
 **Créé:** Janvier 2026  
+**Etudiant** Saif Allah Mahjoub LI3TP3
 **Objectif:** Éducatif - Démonstration de détection d'attaques MITM  
 # mitm-detector
